@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>Free Market</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div class="container p-3 my-3 bg-dark text-white">
+  <h1>FREE MARKET</h1>
+  <p>THE CRIB MARKET FOR EVERY ONE </p>
+</div>
+
+{% for i in object_list %}
+<div class="container">
+
+    <div class="col">
+      <div> <img src="{{ i.cover.url}}" alt="{{ i.title }}" width="300" height="300" class="w3-border w3-padding"> </div>
+    </div>
+
+</div>
+<div class="container">
+
+    <div class="col">
+
+          <h1> <span class="badge badge-secondary">{{i.price}} AED</span></h1>
+          <h3>{{ i.title }}</h3>
+           <p>price is <span class="badge badge-secondary">{{i.price}}</span>  Dirham only</p>
+
+            <p class="text-primary">posted by {{i.user}} ---- post time at  {{i.puplished}} </p>
+
+            <button type="button" class="btn btn-dark">Call me  :-{{i.phone}}  </button>
+              <h1> ____________________________________________________</h1>
+    </div>
+
+</div>
+{% endfor %}
+
+</body>
+
+</html>
+
+
+
+
