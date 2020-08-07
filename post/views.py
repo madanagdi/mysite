@@ -17,14 +17,7 @@ class LogIn(ListView):
 
 
 
-def details(request, the_id):
-    
-    obj = Orders.objects.all()
-    
-    context = {
-        "object":obj
-    }
-    return render (request, 'userpost.html',context)
+
 
 def loginpage(request): 
 
