@@ -25,7 +25,7 @@ SECRET_KEY = 'uh3(hw*func=qax-54w%%q@kjs@ycon)3($#!umgc@xgd$z94b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
