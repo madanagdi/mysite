@@ -11,16 +11,3 @@ class HomePageView(ListView):
     model = Orders
     template_name = 'home.html'
 
-class LogIn(ListView):
-    model = Login
-    template_name = 'login.html'
-
-
-
-
-
-def loginpage(request): 
-
-    name = ['nigo','mase']
-    return render (request, 'login.html',{"name":name})
-    
