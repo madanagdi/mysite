@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'uh3(hw*func=qax-54w%%q@kjs@ycon)3($#!umgc@xgd$z94b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['thecrip502.herokuapp.com','127.0.0.1']
 
