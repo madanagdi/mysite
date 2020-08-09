@@ -7,7 +7,7 @@ objects = models.Manager()
 class Orders(models.Model):
     user = models.CharField(max_length=100,null = True)
     title = models.TextField()
-    cover = models.ImageField(upload_to='images/')
+    cover = models.ImageField(upload_to='media/images/')
     price = models.IntegerField(null=True)
     puplished = models.DateTimeField(auto_now=True)
     phone = models.CharField(max_length=20,null=True)
