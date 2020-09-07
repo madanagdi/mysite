@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+
+
+{%block content%}
+
+
+    <div >
+        
+            <form method="POST" class = " form-group">
+                {% csrf_token %}
+                <label = for="username"> Email or Phone Numper </label>
+                <input class = " from-control" type = "text" name="username" id="username">
+
+                <label = for="password"> Password </label>
+                <input class = " from-control"  type = "password" name="password" id="password">
+
+                <input class = " from-contro" type = "submit" value = " Login ">
+
+
+            </form>  
+        
+    </div>    
+
+{%endblock content%}
+
+
+
