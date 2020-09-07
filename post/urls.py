@@ -7,6 +7,7 @@ from .views import *
 urlpatterns = [
     
     path('', HomePageView.as_view(), name='home'),
+    path('login/', views.login, name='login'),
     
 
 ]
